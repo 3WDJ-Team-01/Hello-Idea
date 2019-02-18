@@ -1,0 +1,2 @@
+# Hello-Idea
+Graduation Project
