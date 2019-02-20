@@ -14,12 +14,16 @@
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
+    "parser": "babel-eslint",
     "extends": [
       "airbnb",
       "prettier"
     ],
     "rules": {
       "linebreak-style": 0,
+      "no-unused-vars": 0,
+      "no-case-declarations": 0,
+      "no-underscore-dangle": 0,
       "import/prefer-default-export": 0,
       "import/no-extraneous-dependencies": 0,
       "import/no-named-as-default": 0,
