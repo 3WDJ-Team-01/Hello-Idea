@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import AuthWrapper from '../components/auth';
+import AuthWrapper from '../components/auth/AuthWrapper';
 import * as authActions from '../store/modules/auth';
 
 export class AuthContainer extends Component {
