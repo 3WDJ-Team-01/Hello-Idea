@@ -119,7 +119,7 @@ const AuthWrapper = ({
     <div className={styles.auth_form}>
       <div className={styles.title}>Hello Idea !</div>
       <div className={styles.form_wrapper}>
-        {kind === 'login' ? (
+        {kind === 'login' && (
           <LoginForm
             email={email}
             password={password}
@@ -127,7 +127,8 @@ const AuthWrapper = ({
             handleChange={handleChange}
             handleKeyPress={handleKeyPress}
           />
-        ) : (
+        )}
+        {kind === 'logout' && (
           <RegisterForm
             email={email}
             password={password}

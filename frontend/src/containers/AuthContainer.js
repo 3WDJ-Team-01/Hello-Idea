@@ -1,16 +1,23 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { withRouter } from 'react-router-dom';
-import { AuthWrapper } from '../components/auth';
+import AuthWrapper from '../components/auth';
 import * as authActions from '../store/modules/auth';
 
 export class AuthContainer extends Component {
   componentDidMount() {
-    this.initialize();
+    const { history, kind } = this.props;
+    const validate = /(login|register)/;
+
+    if (!validate.test(kind)) {
+      history.push('/');
+    } else {
+      this.initialize();
+    }
   }
 
   componentDidUpdate(prevProps, prevState) {
-    const { history, kind } = this.props;
+    const { kind } = this.props;
     if (prevProps.kind !== kind) {
       this.initialize();
     }
