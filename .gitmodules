@@ -1,0 +1,6 @@
+[submodule "Hello-Idea-Frontend"]
+	path = Hello-Idea-Frontend
+	url = https://github.com/3WDJ-Team-01/Hello-Idea-Frontend.git
+[submodule "Hello-Idea-Backend"]
+	path = Hello-Idea-Backend
+	url = https://github.com/3WDJ-Team-01/Hello-Idea-Backend.git
